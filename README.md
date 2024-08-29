@@ -1,8 +1,8 @@
-#Text Analysis and Cleaning Library
+# Text Analysis and Cleaning Library
 This Python library provides tools for analyzing and cleaning text data. The library includes classes and methods to count various text components, extract specific elements, clean unwanted parts, and perform basic text processing on a DataFrame.
 
-Features
-Counter Class
+# Features
+# Counter Class
 Count Words: Counts the number of words in the text.
 Count Characters: Returns the number of characters in the text.
 Count Average Word Length: Calculates the average word length in the text.
@@ -14,7 +14,8 @@ Count Uppercase Words: Counts the number of words in uppercase.
 Count Whitespace: Counts the number of whitespace characters.
 Count Vowels and Consonants: Counts the number of vowels and consonants.
 Count Emails, URLs, Special Characters, Phone Numbers, HTML Tags: Provides methods to count the occurrences of these elements in the text.
-Extractor Class
+
+# Extractor Class
 Get Stopwords: Extracts and returns stopwords from the text.
 Get Sentence and Word Tokens: Returns sentence and word tokens.
 Get Hashtags, Mentions, Digits, Uppercase Words: Returns lists of these elements from the text.
@@ -22,7 +23,8 @@ Get Emails, URLs, Phone Numbers, HTML Tags: Extracts these elements and returns 
 Get Repeated Words: Returns a list of the most repeated words and their frequency.
 Correct Spelling: Corrects the misspelled words in the text.
 Get Sentiment: Analyzes and returns the sentiment of the text.
-Cleaner Class
+
+# Cleaner Class
 Remove Stopwords, Digits, Emails, URLs, Special Characters, HTML Tags, Accented Characters, Emojis: Removes these elements from the text.
 Remove Abbreviations: Replaces abbreviation words with their full forms.
 Remove Duplicate Words: Removes duplicate words from the text.
@@ -32,7 +34,8 @@ Dataframe Class
 Word Frequency Count: Returns word frequency counts from a DataFrame column.
 Convert to Vectors: Converts text into vectors using CountVectorizer or TfidfVectorizer.
 Clean DataFrame: Cleans text in a DataFrame column by applying the cleaning methods in the Cleaner class.
-Installation
+
+# Installation
 bash
 Copy code
 pip install -r requirements.txt
@@ -63,6 +66,7 @@ df = pd.DataFrame({'text': [text, "Another text"]})
 dataframe = Dataframe(df=df, col='text')
 cleaned_corpus = dataframe.clean(remove_complete=True, make_base='stemming')
 print(cleaned_corpus)
-Contributing
+
+# Contributing
 Feel free to submit pull requests, report issues, or suggest features.
 
